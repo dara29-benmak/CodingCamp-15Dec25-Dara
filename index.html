@@ -8,17 +8,76 @@
 
     <!--CSS External-->
     <link rel="stylesheet" href="CSS\style.css">
+
+    <!--Tailwind CSS CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
     <!--Header Content-->
-    <header></header>
+    <header class="main-header p-2">
+        <!--Logo Icon-->
+        <div class="logo"></div>
+
+        <nav class="flex">
+            <a class="border p-2 rounded" href="#home-page">Home</a>
+            <a class="border p-2 rounded" href="#our-profile-page">Our Profile</a>
+            <a class="border p-2 rounded" href="#portfolio-page">Portfolio</a>
+            <a class="border p-2 rounded" href="#message-us-page">Message Us</a>
+        </nav>
+    </header>
+
+    <hr />
 
     <!--Main Content-->
-    <main></main>
+    <main>
+        <!--Home Page-->
+        <section id="home-page" class="min-h-[500px] text-center content-center">
+            <h2 class="text-xl font-bold" id="welcome-speech">Welcome to My Portfolio</h2>
+            <p class="mt-2">We are glad to have you here. Explore our services and offerings.</p>
+        </section>
+
+        <!--Our Profile Page-->
+        <section id="our-profile-page" class="min-h-[500px] text-center content-center">
+            <h2 class="text-xl font-bold">About Our Team</h2>
+            <p class="mt-2">Learn more about us and our team.</p>
+        </section>
+
+        <!--Portfolio Page-->
+        <section id="portfolio-page" class="min-h-[500px] text-center content-center">
+            <h2 class="text-xl font-bold">Our Portfolio</h2>
+            <p class="mt-2">Take a look at our diverse range of projects and achievements.</p>
+        </section>
+
+        <!--Message Us Page-->
+        <section id="message-us-page" class="min-h-[500px] text-center content-center">
+           <header>
+            <h2 class="text-xl font-bold">Message Us</h2>
+            <p class="mt-2">Have a question or want to collaborate? Reach out to us!</p>
+           </header>
+
+           <form> 
+            <div class="mb-4">
+                <label for="name" class="block text-left mb-2">Name:</label>
+                <input type="text" id="name" name="name" class="w-full p-2 border rounded" required>
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-left mb-2">Email:</label>
+                <input type="email" id="email" name="email" class="w-full p-2 border rounded" required>
+            </div>
+            <div class="mb-4">
+                <label for="message" class="block text-left mb-2">Message:</label>
+                <textarea id="message" name="message" class="w-full p-2 border rounded" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="bg-blue-500 text-white p-2 rounded">Send Message</button>
+           </form> 
+        </section>
+    </main>
 
     <!--Footer Content-->
-    <footer></footer>
+    <footer>
+        <p class="text-center p-4 bg-gray-200">© 2024 Portfolio Dara. All rights reserved.</p>
+    </footer>
 
     <!--Js External-->
     <script src="js\script.js"></script>

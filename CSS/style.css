@@ -1,0 +1,13 @@
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    height: 75px;
+    width: 75px;
+    background-color: gainsboro;
+    background-image: url(https://picsum.photos/seed/picsum/200/300);
+    background-size: cover;
+}
