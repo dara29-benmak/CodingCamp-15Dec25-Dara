@@ -2,12 +2,43 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: linear-gradient(135deg, #d9effc 0%, #ebddfa 100%);
+    color:rgb(17, 1, 1);
 }
 
+.header{
+    background: linear-gradient(135deg, #c5d2da 0%, #d5cfd8 100%);
+    color:rgb(17, 1, 1);
+}
 .logo{
     height: 75px;
     width: 75px;
     background-color: gainsboro;
     background-image: url(https://picsum.photos/seed/picsum/200/300);
     background-size: cover;
+}
+
+#home-page {
+    background: linear-gradient(135deg, #d4e9f5 0%, #e7d7f0 100%);
+    color:rgb(17, 1, 1);
+}
+
+
+.profile-image{
+    border-radius: 75%;
+}
+
+#my-profile-page {
+    background: linear-gradient(135deg, #d1e5f0 0%, #e8c0fc 100%);
+    color: rgb(17, 1, 1);
+}
+
+#portfolio-page {
+    background: linear-gradient(135deg, #ddcff0 0%, #e9c7eb 100%);
+    color: rgb(17, 1, 1);
+}
+
+#message-us-page {
+    background: linear-gradient(135deg, #ddcff0 0%, #f1cdee 100%);
+    color: rgb(17, 1, 1);
 }

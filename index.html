@@ -21,7 +21,7 @@
 
         <nav class="flex">
             <a class="border p-2 rounded" href="#home-page">Home</a>
-            <a class="border p-2 rounded" href="#our-profile-page">Our Profile</a>
+            <a class="border p-2 rounded" href="#my-profile-page">My Profile</a>
             <a class="border p-2 rounded" href="#portfolio-page">Portfolio</a>
             <a class="border p-2 rounded" href="#message-us-page">Message Us</a>
         </nav>
@@ -34,19 +34,60 @@
         <!--Home Page-->
         <section id="home-page" class="min-h-[500px] text-center content-center">
             <h2 class="text-xl font-bold" id="welcome-speech">Welcome to My Portfolio</h2>
-            <p class="mt-2">We are glad to have you here. Explore our services and offerings.</p>
+            <p class="mt-2">We are glad to have you here. I've just built my first website, please enjoy the view!</p>
         </section>
 
-        <!--Our Profile Page-->
-        <section id="our-profile-page" class="min-h-[500px] text-center content-center">
-            <h2 class="text-xl font-bold">About Our Team</h2>
-            <p class="mt-2">Learn more about us and our team.</p>
+        <!--My Profile Page-->
+        <section id="my-profile-page" class="min-h-[500px] p-4">
+            <div class="grid grid-cols-2 gap-4">
+                <!-- Left Column: Profile Info -->
+                <div>
+                    <h2 class="text-xl font-bold mb-4">DARA SAPTA MURDIANI</h2>
+                    <h3 class="text-lg font-semibold mb-2"><Summary>Entry-Level Professional leveraging Data Analyst training and experience to advance EdTech innovation. Proficient in BigQuery SQL, Looker Studio, and Excel, I focus on applying data insights to significantly improve educational quality.</Summary></h3>
+                                        
+                    <h3 class="text-lg font-semibold mb-2">EXPERIENCE</h3>
+                    <ul class="list-disc list-inside mb-4">
+                        <li>Freelance Web Developer (2025)</li>
+                        <li>Teaching Intern in Junior High School (2022 - 2023)</li>
+                    </ul>
+                    
+                    <h3 class="text-lg font-semibold mb-2">EDUCATION</h3>
+                    <ul class="list-disc list-inside mb-4">
+                        <li>S1 Natural Science Education, Tidar Univercity | December 2024 | IPK = 3.84/4.00</li>
+                        <li>SMA Negeri 4 Tangerang (2017 - 2020)</li>
+                    </ul>
+                    
+                    <h3 class="text-lg font-semibold mb-2">CERTIFICATIONS</h3>
+                    <ul class="list-disc list-inside">
+                        <li>BigQuery SQL for Data Analysts | PT Revolusi Cita Edukasi | 2025</li>
+                        <li>Pivot Table | PT Linimuda Inspirasi Negeri | 2025</li>
+                        <li>Bootcamp Excel | PT Ebiz Karisma Internasional | 2025</li>
+                        <li>The Art of Effective Data Communication (Data Visualization) | KEMNAKER | 2025</li>
+                        <li>Data Visualization with Looker Studio |  PT Ebiz Karisma Internasional | 2025</li>
+                        <li>Google Collab Entry-Level | PT Ebiz Karisma Internasional | 2025</li>
+                    </ul>
+
+                    <h3 class="text-lg font-semibold mb-2">SKILLS</h3>
+                    <ul class="list-disc list-inside">
+                        <li>Data Analysis</li>
+                        <li>Data Visualization</li>
+                        <li>SQL (BigQuery)</li>
+                        <li>Looker Studio</li>
+                        <li>Microsoft Excel</li>
+                        <li>Google Collab</li>
+                </div>
+                
+                <!-- Right Column: Image -->
+                <div class="flex justify-center items-start">
+                    <img src="assets\Foto prof.png" alt="Profile Image" class="profile-image shadow-lg">
+                </div>
+            </div>
         </section>
 
         <!--Portfolio Page-->
         <section id="portfolio-page" class="min-h-[500px] text-center content-center">
-            <h2 class="text-xl font-bold">Our Portfolio</h2>
-            <p class="mt-2">Take a look at our diverse range of projects and achievements.</p>
+            <h2 class="text-xl font-bold">My Portfolio</h2>
+            <p class="mt-2">Take a look at My Fisrt Web Project. Enjoy!</p>
         </section>
 
         <!--Message Us Page-->
@@ -56,21 +97,48 @@
             <p class="mt-2">Have a question or want to collaborate? Reach out to us!</p>
            </header>
 
-           <form> 
-            <div class="mb-4">
-                <label for="name" class="block text-left mb-2">Name:</label>
-                <input type="text" id="name" name="name" class="w-full p-2 border rounded" required>
-            </div>
-            <div class="mb-4">
-                <label for="email" class="block text-left mb-2">Email:</label>
-                <input type="email" id="email" name="email" class="w-full p-2 border rounded" required>
-            </div>
-            <div class="mb-4">
-                <label for="message" class="block text-left mb-2">Message:</label>
-                <textarea id="message" name="message" class="w-full p-2 border rounded" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="bg-blue-500 text-white p-2 rounded">Send Message</button>
-           </form> 
+           <div class="grid grid-cols-2 gap-4">
+               <!-- Left Column: Form Fields -->
+               <div>
+                   <form name="contactForm">           
+                       <div class="mb-4">
+                           <label for="name" class="block text-left mb-2">Name:</label>
+                           <input type="text" id="name" name="name" class="w-full p-2 border rounded" required>
+                       </div>
+                       <div class="mb-4">
+                           <label for="email" class="block text-left mb-2">Email:</label>
+                           <input type="email" id="email" name="email" class="w-full p-2 border rounded" required>
+                       </div>
+                       <div class="mb-4">
+                           <label class="block text-left mb-2">Gender:</label>
+                           <div class="mt-2">
+                               <input type="radio" id="male" name="gender" value="Male" required class="mr-2">
+                               <label for="male" class="mr-2">Male</label>
+                               <input type="radio" id="female" name="gender" value="Female" required class="mr-2">
+                               <label for="female">Female</label>
+                           </div>
+                       </div>
+                       <div class="mb-4">
+                           <label for="message" class="block text-left mb-2">Message:</label>
+                           <textarea id="message" name="message" class="w-full p-2 border rounded" rows="5" required></textarea>
+                       </div>
+                       <button type="button" onclick="previewForm()" class="bg-green-500 text-white p-2 rounded mr-2">Preview</button>
+                   </form>
+               </div>
+               
+               <!-- Right Column: Preview Box -->
+               <div>
+                   <div id="preview" class="p-4 border rounded bg-gray-100" style="display:none;">
+                       <h3 class="font-bold">Preview Your Message:</h3>
+                       <p><strong>Name:</strong> <span id="preview-name"></span></p>
+                       <p><strong>Email:</strong> <span id="preview-email"></span></p>
+                       <p><strong>Gender:</strong> <span id="preview-gender"></span></p>
+                       <p><strong>Message:</strong> <span id="preview-message"></span></p>
+                       <button type="button" onclick="submitForm()" class="bg-blue-500 text-white p-2 rounded mt-2">Confirm & Send</button>
+                       <button type="button" onclick="hidePreview()" class="bg-gray-500 text-white p-2 rounded mt-2 ml-2">Edit</button>
+                   </div>
+               </div>
+           </div> 
         </section>
     </main>
 
