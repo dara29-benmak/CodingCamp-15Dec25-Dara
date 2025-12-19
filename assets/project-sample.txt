@@ -1,0 +1,6 @@
+Ini adalah contoh file project untuk download.
+Project: Data Analysis Dashboard
+Deskripsi: Dashboard interaktif menggunakan Python dan Streamlit untuk analisis data pendidikan.
+Teknologi: Python, Pandas, Streamlit, Matplotlib.
+
+Untuk detail lengkap, lihat repository di GitHub.

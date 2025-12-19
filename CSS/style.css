@@ -42,3 +42,13 @@
     background: linear-gradient(135deg, #ddcff0 0%, #f1cdee 100%);
     color: rgb(17, 1, 1);
 }
+
+.project-item {
+    height: fit-content;
+    width: min-content;
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #f6cbff;
+}
